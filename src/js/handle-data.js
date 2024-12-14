@@ -1,5 +1,5 @@
 let result = new XMLHttpRequest();
-result.open("GET", "http://localhost:3000/products");
+result.open("GET", "json/data.json");
 result.responseType = "json";
 result.send();
 
