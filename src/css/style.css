@@ -1,0 +1,37 @@
+@import url("./home-style.css");
+@import url("./header-style.css");
+@import url("./service-style.css");
+@import url("./destination-style.css");
+@import url("./experience-style.css");
+
+body {
+  background-image: url("../../image/hero-bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: left;
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar {
+    height: 10px;
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: white;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #f54c2ff0;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    header {
+      .navbar {
+        transform: translateX(0%);
+      }
+    }
+  }
+}

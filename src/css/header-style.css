@@ -1,0 +1,39 @@
+header {
+  position: sticky;
+  z-index: 1;
+
+  .bars-navbar {
+    transition: transform 0.2s ease;
+
+    &:active {
+      transform: scale(0.89);
+    }
+  }
+
+  .ground-navbar {
+    left: 0;
+  }
+
+  .navbar {
+    transform: translateX(100%);
+    transition-duration: 0.2s;
+
+    &.active {
+      transform: translateX(0%);
+    }
+
+    .close-navbar {
+      transition: transform 0.2s ease;
+
+      &:active {
+        transform: scale(0.89);
+      }
+    }
+  }
+
+  figure {
+    img {
+      user-select: none;
+    }
+  }
+}
